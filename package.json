@@ -1,0 +1,17 @@
+{
+  "name": "refactoring",
+  "version": "1.0.0",
+  "description": "\"Refactoring de un js de Launch X\"",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.0.3"
+  }
+}
