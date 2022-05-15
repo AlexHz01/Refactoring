@@ -335,10 +335,12 @@ La estructura de las carpetas de nuestro proyecto deveria quedar de la siguiente
 ```mermaid
 graph TD;
     id1([REFACTORING]) --> id2(Test) 
-    id2(Test) --> id3[/Utils/]
-    id3[/Utils/] --> id5{{Reader.test.js}}
-    id2(Test) --> id4[/Services/]
-    id4[/Services/] --> id6{{ExlorerServices.test.js}}
-    id6{{ExlorerServices.test.js}} --o id7{{FizzBuzzServices.test.js}}
+    id2(Test) -- Reader --> id5{{Reader.test.js}}
+    id2(Test) -- Services --> id6{{ExlorerServices.test.js}}
+    id6{{ExlorerServices.test.js}} --- id7{{FizzBuzzServices.test.js}}
+    id1([REFACTORING]) --> id8(Lib)
+    id8(Lib) -- Services --> id9{{FizzBuzzServices.js}}
+    id9{{FizzBuzzServices.js}} --- id10{{ExplorerServices.js}}
+    id8(Lib) -- Reader --> id11{{Reader.js}}
 ```
 
