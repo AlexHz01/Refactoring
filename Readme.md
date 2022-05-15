@@ -561,5 +561,3 @@ Se creará la nueva funcionalidad dentro de `FizzbuzzService`, misma que será u
 3. Finalmente usa este método dentro de un nuevo endpoint en el server. Aquí te dejo un ejemplo de cómo se debería ver tu nuevo endpoint:
 
 ![image](https://user-images.githubusercontent.com/17634377/164956665-16a96f81-83ef-4c24-8229-e25a98c97993.png)
-
-No olvides agregar pruebas, correr tu linter, subir a GitHub y ver que el Action funcione.
