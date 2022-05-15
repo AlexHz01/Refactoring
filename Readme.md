@@ -400,7 +400,7 @@ const explorer15 = {name: "Explorer15", score: 15}
 FizzbuzzService.applyValidationInExplorer(explorer15) // {name: "Explorer15", score: 15, trick: "FIZZBUZZ"}
 ```
 
-### *Automatización de Pruebas con GitHub Actions*
+## 🕵️‍♀️ *Automatización de Pruebas con GitHub Actions*
 
 Si no tienes pruebas no estás autorizado para ninguna entrega ni para avanzar en el proyecto.
 
