@@ -293,14 +293,14 @@ const explorersInNodeAndFizzBuzzTrick = explorersInNode.map((explorer) => assign
 
 > Realizamos este procedimiento para agregar una nueva dependencia a nuestro proyecto. En este ejemplo agregamos JEST, un framework de testing que nos ayudará a crear nuestras pruebas de unidad. Revisa la documentación de Jest: https://jestjs.io/.
 
-###  ✍🤹‍♀️ *Realizando el primer commit*
+##  ✍🤹‍♀️ *Realizando el primer commit*
 
 1. Para realizar un commit es necesario agregar los archivos con el comando `git add` + el nombre del archivo.
 2. Realizamos el commit con el comando `git commit -m "Aqui pones tu comentario"`.
 3. A hora solo nos queda subir todo a Git Hub con el comando `git push -u origin master`. 
 > es importante realizar muchos commit  ya que esto nos facilita saber que cambios se realizaron en el proyecto.  
 
-### 🏁 *Empezando a refactorizar*
+## 🏁 *Empezando a refactorizar*
 
 Ahora vamos a tener que modularizar en Orientación a Objetos para darle una mejor estructura.
 
