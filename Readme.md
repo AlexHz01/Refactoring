@@ -276,7 +276,7 @@ const explorersInNodeAndFizzBuzzTrick = explorersInNode.map((explorer) => assign
 
 # Creación de Proyecto Nuevo de JS
 
-###  👣 *Primeros pasos*
+## 👣 *Primeros pasos*
 
 1. Creamos un directorio vacio en nuestra pc llamdo  `Refactoring`.
 2. Dentro del directorio inicializamos git con el comando `git init`.
@@ -284,7 +284,7 @@ const explorersInNodeAndFizzBuzzTrick = explorersInNode.map((explorer) => assign
 4. Utilizamos el commando `git remote add origin` + el url del repo creaado.(Esto sincroniza la repo local con la de Git Hub)
 6. Dentro del  directorio vacio ejecutamos el comando `npm init`. Este ejecutara un cliente que te preguntará algunos datos de tu proyecto. Es indiferente esta información de momento, puedes darle enter hasta que termine. Al finalizar te creará el archivo package.json. A partir de ahora nuestro directorio es un proyecto de JS. (Así se crea desde cero.)
 
-###  ✍ *Agregando dependecia jest*
+## ✍ *Agregando dependecia jest*
 
 > Para agregar una dependecia, se necesita  indicar direcrtamente en el `package.json`, este archivo es el corazon de cualquier app de js.
 
@@ -343,7 +343,7 @@ graph TD;
     id9{{FizzBuzzServices.js}} --- id10{{ExplorerServices.js}}
     id8(Lib) -- Reader --> id11{{Reader.js}}
 ```
-### ✍ 🏠 *Haciendo las clases*
+## ✍ 🏠 *Haciendo las clases*
 
 1. Refactor de la lectura del archivo (Reader.js) 
 
@@ -423,7 +423,7 @@ jobs:
 
 Este es un GitHub Action que automatizará la ejecución de las pruebas cada vez que hagas PUSH a tu repositorio de GitHub.
 
-###  🔍 *Agregando dependecia Linter (Opcional)*
+## 🔍 *Agregando dependecia Linter (Opcional)*
 
 
 <details>
@@ -485,7 +485,7 @@ Es indispensable revisar la documentación de cada dependencia que usemos: https
 6. El Linter arregla todos estos detalles por ti. Corre `npm run linter-fix` y tus archivos ahora quedarán con el mejor formato.
 </details>
 
-#  🏃‍♂️ *API con express* 
+##  🏃‍♂️ *API con express* 
 
 Ahora necesitamos crear otra clase que nos permita extender un puente entre funcionalidad y el server que vamos a crear.
 
