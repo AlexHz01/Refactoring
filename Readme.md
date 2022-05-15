@@ -1,6 +1,6 @@
 # Semana 4 NodeJS Refactoring 
 
-#### Problema a resolver
+### Problema a resolver
 
 Actualmente se necesita calcular cierta información de los explorers de LaunchX, de momento se ha desarrollado por una consultoría externa muy mala un script en JS para realizar esto. Sin embargo después de una evaluación interna se ha decidido refactorizar totalmente el proyecto, y esta es tu primer set de tareas a realizar.
 
@@ -8,6 +8,7 @@ Acontinuacion podemos encontrar los archivos a refactorizar y los requerimientos
 
 <details>
 <summary> app.js & explorers.json </summary>
+
 `app.js`
   
 ```javascript
@@ -303,8 +304,41 @@ const explorersInNodeAndFizzBuzzTrick = explorersInNode.map((explorer) => assign
 
 Ahora vamos a tener que modularizar en Orientación a Objetos para darle una mejor estructura.
 
-Crearemos lo siguiente:
+Crearemos las siguientes clases:
 
 - `Reader` : en esta clase necesitaremos un método static para leer el archivo y obtener la información dado el nombre archivo.
 - `ExplorerServices` : aquí vamos tres métodos static para obtener lo que se necesita realizar con la lista de explorers. En este service vamos a realizar todas las operaciones de filtrado y mapeo que se necesiten
 - `FizzbuzzService` : aquí haremos un método static para aplicar la validación sobre un explorer y agregarle el campo que se necesita.
+
+```mermaid
+classDiagram
+    class Reader
+    Reader : +readJsonFile(filePath)
+```
+
+```mermaid        
+classDiagram
+    class ExplorerService
+    ExplorerService : +filterByMission(explorers, mission)
+    ExplorerService : +getAmountOfExplorersByMission(explorers, mission)
+    ExplorerService : +getExplorersUsernamesByMission(explorers, mission)
+```
+
+```mermaid        
+classDiagram
+    class FizzbuzzService
+    FizzbuzzService : +applyValidationInExplorer(explorers, mission)
+```
+
+La estructura de las carpetas de nuestro proyecto deveria quedar de la siguiente manera
+
+```mermaid
+graph TD;
+    id1([REFACTORING]) --> id2(Test) 
+    id2(Test) --> id3[/Utils/]
+    id3[/Utils/] --> id5{{Reader.test.js}}
+    id2(Test) --> id4[/Services/]
+    id4[/Services/] --> id6{{ExlorerServices.test.js}}
+    id6{{ExlorerServices.test.js}} --o id7{{FizzBuzzServices.test.js}}
+```
+
