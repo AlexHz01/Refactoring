@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Semana 4 NodeJS
 
 ```mermaid
@@ -25,7 +24,6 @@ Acontinuacion podemos encontrar los archivos a refactorizar y los requerimientos
 
 <details>
 <summary> app.js & explorers.json </summary>
-
 `app.js`
   
 ```javascript
