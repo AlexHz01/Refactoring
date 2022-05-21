@@ -19,4 +19,10 @@ describe("Test para Explorer service", () =>{
         expect(nameUserInNodes).toEqual(["ajolonauta6"]);
     });
 
+    test("test response por stack", () => {
+        const explorer = [{githubUsername : "kike",stacks : ["java", "node", "javascript" ]},{githubUsername : "riusey", stacks : "javascript" }];
+        const getStack = ExplorerService.getStackExplorer(explorer, "javascript")
+        expect(getStack).toEqual(["kike", "riusey"])
+    });
+
 });
