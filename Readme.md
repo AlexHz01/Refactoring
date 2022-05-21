@@ -13,7 +13,6 @@ graph TD;
     ExplorerService-->ExplorerController
     FizzbuzzService-->ExplorerController
 ```
-=======
 # ⭐️ Semana 4 NodeJS Refactoring 
 
 ### 👀 Problema a resolver
@@ -92,7 +91,7 @@ const explorersInNodeAndFizzBuzzTrick = explorersInNode.map((explorer) => assign
 // Part 8: Get a list of the explorers in node, if the score is divisible by 5 and 3, set the property trick and the value FIZZBUZZ, if is just divisible by 5 set the property trcik and the value BUZZ, if is just divisible by 3 set the property trick and the value FIZZ, otherwise set the property trick and the score value. TODO
 
 ```
-<details>
+
   `explorers.json`
 ``` json
 [
@@ -512,9 +511,6 @@ graph TD;
     ExplorerService-->ExplorerController
     FizzbuzzService-->ExplorerController
     ExplorerController-->Server
-<<<<<<< HEAD
-```
-=======
 ```
 ## 🤩 Creando controller para conectar la funcionalidad con el server
 
@@ -580,4 +576,3 @@ Se creará la nueva funcionalidad dentro de `FizzbuzzService`, misma que será u
 3. Finalmente usa este método dentro de un nuevo endpoint en el server. Aquí te dejo un ejemplo de cómo se debería ver tu nuevo endpoint:
 
 ![image](https://user-images.githubusercontent.com/17634377/164956665-16a96f81-83ef-4c24-8229-e25a98c97993.png)
->>>>>>> 9dc4173ff76edcc989b47834dc62392f76c89d65
