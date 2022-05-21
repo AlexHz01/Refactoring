@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "jest",
+    "bot":  "node ./lib/bot.js",
     "linter": "node ./node_modules/eslint/bin/eslint.js .",
     "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
     "server": "node ./lib/server.js"
@@ -21,6 +22,7 @@
     "jest": "^26.0.0"
   },
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "node-telegram-bot-api": "^0.57.0"
   }
 }
